@@ -4,7 +4,22 @@
   position: relative;
 }
 
+#logo {
+  
+  float: left;
+  height: 300px;
+  width: auto; /* correct proportions to specified height */
+}
+
 html, body {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ), url("Metal gear blueprints.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: Lato, sans-serif;
   font-weight: 300;
   line-height: 1;
@@ -17,9 +32,9 @@ html, body {
 
 aside {
   width: 50%;
-  height: 816px;
-  float: left;
-  padding: 0 20rem;
+  height: 200px;
+  /*float: left;*/
+  padding: 0 10rem;
   margin: 1rem 0;
 }
 
@@ -798,7 +813,7 @@ form:after {
   font-size: 1.2rem;
 }
 .meta p, .meta a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
 }
 .meta h1{
   font-size: 3rem;
@@ -888,8 +903,6 @@ form:after {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  color: #444;
-  background: #eee;
 }
 .rwd-table tr {
   border-color: #46637f;
